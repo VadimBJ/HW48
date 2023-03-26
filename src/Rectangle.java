@@ -3,8 +3,11 @@ public class Rectangle {
   private double width;
 
   public Rectangle(double length, double width) {
-    if (length <= 0||width<=0) {
+    if (length <= 0 || width <= 0) {
       throw new IllegalArgumentException("Значение не может быть <=0!");
+    }
+    if (length * width > Double.MAX_VALUE) {
+      throw new IllegalArgumentException("Слишком большие значения!");
     }
     this.length = length;
     this.width = width;
