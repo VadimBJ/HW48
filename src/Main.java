@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
-    Rectangle rectangle1 = new Rectangle(2, 4);
+    Rectangle rectangle1 = new Rectangle(8, 4);
     Rectangle rectangle2 = new Rectangle(4, 2);
     Rectangle rectangle3 = new Rectangle(4, 6);
-    Rectangle rectangle4 = new Rectangle(6, 8);
+    Rectangle rectangle4 = new Rectangle(2, 5);
     List<Rectangle> listRect = new ArrayList<>();
     listRect.add(rectangle1);
     listRect.add(rectangle2);
