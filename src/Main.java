@@ -8,7 +8,7 @@ public class Main {
     Rectangle rectangle1 = new Rectangle(8, 4);
     Rectangle rectangle2 = new Rectangle(4, 2);
     Rectangle rectangle3 = new Rectangle(4, 6);
-    Rectangle rectangle4 = new Rectangle(2, 5);
+    Rectangle rectangle4 = new Rectangle(8, 8);
     List<Rectangle> listRect = new ArrayList<>();
     listRect.add(rectangle1);
     listRect.add(rectangle2);
