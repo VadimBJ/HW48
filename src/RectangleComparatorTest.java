@@ -1,4 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -6,7 +8,7 @@ import java.util.List;
 
 public class RectangleComparatorTest {
   @Test
-  public void RectangleComparator(){
+  public void RectangleComparator() {
     Rectangle rectangle1 = new Rectangle(2, 4);
     Rectangle rectangle2 = new Rectangle(4, 4);
     Rectangle rectangle3 = new Rectangle(3, 4);
@@ -19,6 +21,7 @@ public class RectangleComparatorTest {
     listExp.add(rectangle3);
     listExp.add(rectangle2);
     listAct.sort(new RectangleComparator());
-    assertEquals(listExp,listAct);
+    assertEquals(listExp, listAct);
   }
+
 }

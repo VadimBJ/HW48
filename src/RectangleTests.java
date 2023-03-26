@@ -25,6 +25,16 @@ public class RectangleTests {
   }
 
   @Test
+  public void MaxLength() {
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(Double.MAX_VALUE, 2));
+  }
+
+  @Test
+  public void MaxWeight() {
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(2, Double.MAX_VALUE));
+  }
+
+  @Test
   public void ZeroAll() {
     assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(0, 0));
   }
@@ -34,4 +44,8 @@ public class RectangleTests {
     assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(-2, -2));
   }
 
+  @Test
+  public void MaxAll() {
+    assertThrowsExactly(IllegalArgumentException.class, () -> new Rectangle(Double.MAX_VALUE, Double.MAX_VALUE));
+  }
 }
